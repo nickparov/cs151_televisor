@@ -43,13 +43,13 @@ let hiddenGifs = [];
 
 let angle = 0,
   pause = true;
-let sound = null;
+// let sound = null;
 let node;
 
 function setup() {
   createCanvas(600, 400);
-  sound.loop();
-  sound.pause();
+  // sound.loop();
+  // sound.pause();
   // load gifs   
   Object.keys(gifs).forEach((gif_name) => {
     gifs[gif_name].image = createImg(urls[gif_name], "");
@@ -78,7 +78,7 @@ function setup() {
 }
 
 function preload() {
-  sound = createAudio("phonk.mp3");
+  // sound = createAudio("phonk.mp3");
 }
 
 function changeGIF(shownGif) {
@@ -140,10 +140,10 @@ function draw() {
 }
 
 function mouseClicked() {
-  if(!pause)
-    sound.pause()
-  else 
-    sound.play()
+  // if(!pause)
+    // sound.pause()
+  // else 
+    // sound.play()
   pause = !pause;
   angle = 13.1;
 }
